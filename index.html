@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>DeskFit — Desk &amp; Standing Desk Height Calculator (Free)</title>
+<meta name="description" content="Free ergonomic calculator: enter your height and get your ideal sitting desk height, standing desk height, chair seat height and monitor position in seconds. Plus practical setup guides.">
+<link rel="canonical" href="https://e4124659-ux.github.io/deskfit/">
+<style>@import url("css/style.css");</style>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  "name": "DeskFit",
+  "url": "https://e4124659-ux.github.io/deskfit/"
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "What is the ideal desk height for my body height?",
+      "acceptedAnswer": { "@type": "Answer", "text": "For sitting, a good starting point is roughly 40–43% of your body height in centimeters (elbows bent at 90–100°, forearms level with the desk). For a standing desk, aim for about 63–68% of your body height." }
+    },
+    {
+      "@type": "Question",
+      "name": "Is a standard 75 cm desk too high for me?",
+      "acceptedAnswer": { "@type": "Answer", "text": "For people under roughly 180 cm tall, a fixed 75 cm desk is often slightly too high for comfortable typing, which pushes shoulders up. A keyboard tray, a lower desk, or a chair raised with a footrest can compensate." }
+    },
+    {
+      "@type": "Question",
+      "name": "How often should I alternate between sitting and standing?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Research generally suggests frequent short changes work better than rare long ones — e.g. switching every 30–60 minutes. The goal is to reduce total uninterrupted sitting time, not to stand all day." }
+    },
+    {
+      "@type": "Question",
+      "name": "Do standing desks help with back pain?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Evidence is mixed. Standing desks reduce sedentary time and many users report less discomfort, but movement breaks matter more than the desk itself. Standing still all day causes its own problems." }
+    }
+  ]
+}
+</script>
+</head>
+<body>
+
+<header class="site">
+  <div class="container">
+    <a class="logo" href="/">Desk<span>Fit</span></a>
+    <nav class="mainnav">
+      <a href="/deskfit/#calculator">Calculator</a>
+      <a href="/deskfit/#guides">Guides</a>
+      <a href="/deskfit/guides/choose-standing-desk.html">Buying Guide</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <div class="container">
+    <div class="hero">
+      <h1>Find your perfect desk height<br>in 5 seconds</h1>
+      <p class="sub">Enter your height and get ergonomist-backed estimates for your sitting desk, standing desk, chair and monitor — free, no signup.</p>
+    </div>
+
+    <section id="calculator" style="padding-top:0;">
+      <div class="card calculator">
+        <div class="calc-form">
+          <label for="height">Your height</label>
+          <input type="number" id="height" placeholder="175" min="80" max="250" step="0.5" inputmode="decimal">
+          <select id="unit" aria-label="Unit">
+            <option value="cm" selected>cm</option>
+            <option value="ft">ft</option>
+          </select>
+          <button class="btn" id="calc-btn">Calculate</button>
+        </div>
+
+        <div class="results" id="results">
+          <h3>Your ergonomic setup numbers</h3>
+          <div class="results-grid">
+            <div class="result-card"><div class="val" id="r-sit">—</div><div class="lbl">Sitting desk height</div></div>
+            <div class="result-card"><div class="val" id="r-stand">—</div><div class="lbl">Standing desk height</div></div>
+            <div class="result-card"><div class="val" id="r-chair">—</div><div class="lbl">Chair seat height</div></div>
+            <div class="result-card"><div class="val" id="r-monitor">—</div><div class="lbl">Monitor top (eye level)</div></div>
+          </div>
+          <p class="calc-note">Estimates based on standard anthropometric ratios. Fine-tune so your elbows sit at 90–100° with relaxed shoulders.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="why">
+      <h2>Why these numbers matter</h2>
+      <p class="lead">Most desks are built for an “average” person that doesn’t exist. If your desk is too high you shrug your shoulders for hours; too low and you hunch your spine. Four measurements fix almost everything:</p>
+      <ul>
+        <li><strong>Desk at elbow height</strong> — forearms rest level, wrists stay neutral while typing.</li>
+        <li><strong>Chair supporting the posture</strong> — seat height lets both feet rest flat.</li>
+        <li><strong>Monitor top at eye level</strong> — no forward-head tilt, less neck strain.</li>
+        <li><strong>Frequent position changes</strong> — the best posture is the next one.</li>
+      </ul>
+    </section>
+
+    <section id="picks">
+      <h2>Gear worth spending on</h2>
+      <p class="lead">You don’t need everything at once. These three upgrades give the biggest comfort-per-dollar, in this order:</p>
+      <div class="grid3">
+        <div class="card pick">
+          <h3>1. Ergonomic chair</h3>
+          <p>The foundation. Adjustable seat height and lumbar support beat any gadget. Read what actually matters before paying premium prices.</p>
+          <a class="cta" data-aff="ergonomic office chair adjustable lumbar support" rel="sponsored nofollow noopener" href="#">Browse chairs →</a>
+        </div>
+        <div class="card pick">
+          <h3>2. Sit-stand desk</h3>
+          <p>Dual-motor, stable at full extension, ≥70&nbsp;kg capacity. Our buying guide explains the specs vendors don’t advertise.</p>
+          <a class="cta" data-aff="electric standing desk dual motor" rel="sponsored nofollow noopener" href="#">Browse standing desks →</a>
+        </div>
+        <div class="card pick">
+          <h3>3. Monitor arm</h3>
+          <p>Puts the screen exactly at eye height and frees desk space — often the cheapest big win of all three.</p>
+          <a class="cta" data-aff="monitor arm gas spring single" rel="sponsored nofollow noopener" href="#">Browse monitor arms →</a>
+        </div>
+      </div>
+    </section>
+
+    <section id="guides">
+      <h2>Practical guides</h2>
+      <ul class="guides-list">
+        <li>
+          <a href="/deskfit/guides/standing-desk-setup.html">The complete standing desk setup guide</a>
+          <div class="desc">Correct heights, monitor distance, anti-fatigue mats, sit-stand rhythm and the mistakes everyone makes.</div>
+        </li>
+        <li>
+          <a href="/deskfit/guides/budget-home-office.html">Healthy home office for under $300</a>
+          <div class="desc">Where each dollar goes furthest: the upgrade order we recommend when the budget is tight.</div>
+        </li>
+        <li>
+          <a href="/deskfit/guides/choose-standing-desk.html">How to choose a standing desk (2026 buyer’s framework)</a>
+          <div class="desc">Motor types, stability tests, weight ratings and warranty red flags — judge any desk in 10 minutes.</div>
+        </li>
+      </ul>
+    </section>
+
+    <section id="faq" class="faq">
+      <h2>Frequently asked questions</h2>
+      <details open>
+        <summary>What is the ideal desk height for my height?</summary>
+        <p>Sitting: about 40–43% of your height in cm (a 175&nbsp;cm person → ~70–75&nbsp;cm). Standing: about 63–68% (~110–119&nbsp;cm). Use the calculator above for your exact range.</p>
+      </details>
+      <details>
+        <summary>Is a standard 75 cm desk too high for me?</summary>
+        <p>Under ~180&nbsp;cm of body height it usually is, at least for typing. Fixes: raise the chair and add a footrest, use a keyboard tray, or pick a desk with a lower fixed height.</p>
+      </details>
+      <details>
+        <summary>How often should I switch between sitting and standing?</summary>
+        <p>Frequently and briefly beats rarely and long. A practical pattern: change every 30–60 minutes and move during calls. Don’t stand motionless for hours.</p>
+      </details>
+      <details>
+        <summary>Do standing desks help with back pain?</summary>
+        <p>Honestly: evidence is mixed. They cut sitting time and many users feel better, but regular movement breaks matter more than furniture. This site isn’t medical advice — see a professional for persistent pain.</p>
+      </details>
+    </section>
+  </div>
+</main>
+
+<footer class="site">
+  <div class="container">
+    <p><strong>Disclosure:</strong> some outbound product links may be affiliate links — if you buy through them we may earn a commission at no extra cost to you. This keeps DeskFit free. Content is general information, not medical or professional advice.</p>
+    <p>© 2026 DeskFit · <a href="https://github.com/e4124659-ux/deskfit" style="color:var(--accent)">Source on GitHub</a></p>
+  </div>
+</footer>
+
+<script src="js/calculator.js"></script>
+</body>
+</html>
